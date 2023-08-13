@@ -33,6 +33,10 @@
     text-decoration: none;
     color: white;
 }
+.nav-items > a:hover{
+    color: bisque;
+    transition: 0.25s;
+}
 .navham{
     display: none;
     cursor: pointer;
@@ -45,22 +49,39 @@
     height: 5px;
     background-color: white;
     border-radius: 10px;
-    transition: 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 @media(max-width: 720px){
     .navham{
         display: block;
     }
+    .navham.active .bar:nth-child(1){
+        transform: translateY(15px) rotate(45deg);
+    }
+    .navham.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .navham.active .bar:nth-child(3){
+        transform: translateX(1px) rotate(-45deg)
+    }
     .navlist{
         position: fixed;
         background-color: var(--default-color);
         top: 60px;
+        right: -100%;
         width: 100%;
         text-align: left;
+        transition: 0.3s;
+        
+    }
+    .navlist.active{
+        
+        right: 0;
     }
     .nav-items{
         display: block;
         margin: 16px 0;
+        
     }
 
 }
