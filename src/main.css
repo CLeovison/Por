@@ -41,51 +41,55 @@ body {
 }
 .nav-items > a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .nav-items > a:hover {
   color: bisque;
   transition: 0.25s;
-}
-.btm-nav{
-  width: 100%;
-}
-.btm-nav > ul{
-  display: inline-block;
-  list-style: none;
-  padding: 15px;
-  font-size: 18px;
 }
 
 /*End of Top Navigation Bar*/
 
 /*Start of Bottom Navigation Bar*/
 .btm-nav{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  position: fixed;
   width: 100%;
   background-color: var(--default-color);
   display: none;
 }
-.btm-nav > ul > li > a{
-  text-decoration: none;
+.btm-nav-title > h2 > a{
+  font-size: 17px;
   color: white;
+}
+.btm-nav > ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 15px;
+  font-size: 18px;
 }
 .btm-nav > ul > li{
   display: inline-block;
   padding: 15px;
 }
+.btm-nav > ul > li > a{
+  text-decoration: none;
+  color: white;
+  padding: 30px;
+}
+
 /*End of Bottom Navigation Bar*/
 /*Start of Home Section*/
 .Home{
   width: 100%;
 }
-@media (max-width: 600px) {
-  .navlist{
+@media (max-width: 720px) {
+  .navbar{
     display: none;
   }
   .btm-nav{
-    display: block;
+    display: inline-block;
+ 
   }
+  
 }
