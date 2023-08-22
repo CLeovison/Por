@@ -61,7 +61,7 @@ body {
 }
 /*Start of Bottom Navigation Bar*/
 .btm-nav{
-  position: fixed; 
+
   width: 100%;
   background-color: var(--default-color);
   display: none;
@@ -101,10 +101,11 @@ body {
 
   .navlist{
   display: none;
+  position: fixed;
  }
   .btm-nav{
     display: inline-block;
- 
+    
   }
   
 }
