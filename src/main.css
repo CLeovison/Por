@@ -66,3 +66,18 @@ body {
 .Home{
   width: 100%;
 }
+
+@media screen and (max-width: 600px) {
+  .navlist{
+    
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: var(--default-color);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
