@@ -79,5 +79,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+  
+  }
+  .nav-items > a{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 }
