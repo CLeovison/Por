@@ -178,4 +178,10 @@ p {
     justify-content: center;
     align-items: center;
   }
+  .nav-items > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
