@@ -40,6 +40,7 @@ body {
   font-size: 18px;
 }
 .nav-items > a {
+
   text-decoration: none;
   color: white;
 }
@@ -70,6 +71,7 @@ body {
 
 
 @media screen and (max-width: 700px) {
+
   .navlist{
     position: fixed;
     height: 100px;
@@ -81,5 +83,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .nav-items > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 }
