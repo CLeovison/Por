@@ -8,9 +8,9 @@
   box-sizing: border-box;
 }
 body {
-    font-family: 'Roboto Slab', serif;
-    font-weight: 400;
-   
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  background-color: var(--default-color);
 }
 
 /*Start of Navigation Bar*/
@@ -28,10 +28,9 @@ body {
   padding-left: 20px;
   text-decoration: none;
   color: white;
-  
 }
-.nav-title > h2 > a:hover{
-  color:#0c0c32;
+.nav-title > h2 > a:hover {
+  color: #0c0c32;
 }
 .nav-items {
   display: inline-block;
@@ -48,29 +47,115 @@ body {
   color: bisque;
   transition: 0.25s;
 }
-.nav-items > a > i{
+.nav-items > a > i {
   padding-right: 3px;
 }
+/*Start of Global Classes*/
+.main-header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 10px;
+  color: white;
+}
+/*End of Global Classes*/
+
 /*End of Navigation Bar*/
-.Home{
-  width: 100%;
-  
-}
-.About{
+.Hero {
   width: 100%;
 }
-.Projects{
+.About {
   width: 100%;
-
-}
-.Contacts{
-  width: 100%;
- 
 }
 
+/*Start of Projects*/
+.Projects {
+  width: 100%;
+}
+.prjct-list > div {
+  width: 400px;
+}
+.prjct-list {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+.overall-content {
+  padding: 15px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  font-size: 15px;
+  margin: 10px;
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & img {
+    width: 350px;
+  }
+}
+.prjct-contents > h2,
+p {
+  padding-top: 10px;
+  text-align: center;
+}
+.technologies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .title-tech {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  & .list-tech {
+    list-style: none;
+    padding: 5px;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: var(--default-color);
+    color: white;
+  }
+}
+.btn-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.links {
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+/*Start of Contact Section*/
+.Contacts {
+  width: 100%;
+}
+
+.cntct-list > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+}
+.cntct-items {
+  color: black;
+  text-decoration: none;
+}
+/*End of Contact Section*/
 
 @media screen and (max-width: 700px) {
-  .navlist{
+  /*Start of Navigation Bar Section*/
+  .navlist {
     position: fixed;
     height: 100px;
     width: 100%;
@@ -81,11 +166,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  
   }
-  .nav-items > a{
+  .nav-items > a {
     display: flex;
     align-items: center;
     flex-direction: column;
+  }
+  /*End of Navigation Bar Section*/
+  .prjct-list {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
