@@ -50,6 +50,11 @@ body {
 .nav-items > a > i {
   padding-right: 3px;
 }
+.light-dark{
+  display: none;
+}
+/*End of Navigation Bar*/
+
 /*Start of Global Classes*/
 .main-header {
   text-align: center;
@@ -60,7 +65,7 @@ body {
 }
 /*End of Global Classes*/
 
-/*End of Navigation Bar*/
+
 .Hero {
   width: 100%;
 }
@@ -71,19 +76,24 @@ body {
 /*Start of Projects*/
 .Projects {
   width: 100%;
+  height: auto;
 }
 
 .prjct-list {
   display: flex;
   justify-content: center;
   align-items: stretch;
+  flex-wrap: wrap;
 }
+
 .overall-content {
   padding: 15px;
   background-color: antiquewhite;
   border-radius: 10px;
   font-size: 15px;
   margin: 10px;
+ 
+
 }
 .img-container {
   display: flex;
@@ -93,11 +103,14 @@ body {
     width: 350px;
   }
 }
-.prjct-contents > h2,
+.prjct-contents >h2,
 p {
   padding-top: 10px;
   text-align: center;
+  
 }
+
+/*Start of Technologies Section*/
 .technologies {
   display: flex;
   justify-content: center;
@@ -173,6 +186,6 @@ p {
   /*End of Navigation Bar Section*/
   .prjct-list {
     display: flex;
-    flex-wrap: wrap;
+   
   }
 }
