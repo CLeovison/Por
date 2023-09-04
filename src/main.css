@@ -52,7 +52,9 @@ body {
   padding-right: 3px;
 }
 .light-dark{
-
+  & img{
+    color: white;
+  }
 }
 /*End of Navigation Bar*/
 
@@ -83,8 +85,11 @@ body {
 .prjct-list {
   display: flex;
   justify-content: center;
-  align-items: stretch;
-  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+}
+.prjct-list > div{
+
 }
 
 .overall-content {
@@ -93,16 +98,19 @@ body {
   border-radius: 10px;
   font-size: 15px;
   margin: 10px;
- 
 
+ 
 }
+
 .img-container {
   display: flex;
   justify-content: center;
   align-items: center;
   & img {
-    width: 350px;
+    width: 500px;  
+    pointer-events: none;
   }
+
 }
 .prjct-contents >h2,
 p {
@@ -116,7 +124,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  margin-top: 5px;
   & .title-tech {
     list-style: none;
     font-size: 18px;
@@ -146,6 +154,8 @@ p {
   border-radius: 5px;
   margin: 5px;
 }
+/*End of Technologies Section*/
+
 
 /*Start of Contact Section*/
 .Contacts {
@@ -187,5 +197,8 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  .prjct-list > div{
+    width: auto;
   }
 }
