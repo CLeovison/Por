@@ -52,7 +52,7 @@ body {
   padding-right: 3px;
 }
 .light-dark{
-  display: none;
+
 }
 /*End of Navigation Bar*/
 
@@ -164,8 +164,12 @@ p {
   text-decoration: none;
 }
 /*End of Contact Section*/
-
-@media screen and (max-width: 700px) {
+@media  (min-width: 650px){
+  .nav-items > a > i{
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
   .navlist{
     position: fixed;
     height: 100px;
