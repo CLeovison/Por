@@ -35,6 +35,10 @@ body {
 .nav-title > h2 > a:hover {
   color: #0c0c32;
 }
+.navlist {
+  position: fixed;
+  right: 3%;
+}
 .nav-items {
   display: inline-block;
   list-style: none;
@@ -51,21 +55,19 @@ body {
   transition: 0.25s;
 }
 .nav-items > a > i {
-  padding-right: 3px;
+  padding-right: 5px;
 }
 /*Start of Dark & Light Mode*/
 .light-dark {
- 
+  padding: 5px;
 }
 .light-dark > i {
   color: white;
   cursor: pointer;
   padding: 5px;
 }
-
-.light-theme.active {
-  background-color: white;
-  color: var(--default-color);
+.light-dark > .light-theme{
+  display: none;
 }
 
 /*End of Dark & Light Mode*/
@@ -84,6 +86,9 @@ body {
 
 .Hero {
   width: 100%;
+}
+.home-intro > h2 {
+  color: white;
 }
 .About {
   width: 100%;
@@ -110,8 +115,9 @@ body {
   list-style: none;
 }
 .cntct-items {
-  color: black;
+  color: white;
   text-decoration: none;
+  padding: 5px;
 }
 /*End of Contact Section*/
 
