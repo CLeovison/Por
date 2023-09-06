@@ -1,8 +1,8 @@
 :root {
-  --default-color: rgba(34, 36, 37, 1);
-  --background-color-white: white;
+  --main-color: rgba(34, 36, 37, 1);
+  --background-color-white: rgba(255, 255, 247);
   --text-color: rgba(34, 36, 37, 1);
-  --button-color: white;
+
 }
 
 * {
@@ -13,7 +13,9 @@
 body {
   font-family: "Roboto Slab", serif;
   font-weight: 400;
-  background-color: var(--default-color);
+  background-color: var(--main-color);
+}
+body.active {
 }
 
 /*Start of Navigation Bar*/
@@ -23,7 +25,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--default-color);
+
   position: fixed;
   font-size: 16px;
 }
@@ -37,12 +39,12 @@ body {
 }
 .navlist {
   position: fixed;
-  right: 3%;
+  right: 50px;
 }
 .nav-items {
   display: inline-block;
   list-style: none;
-  padding: 15px;
+  padding: 10px;
   font-size: 18px;
 }
 .nav-items > a {
@@ -57,17 +59,20 @@ body {
 .nav-items > a > i {
   padding-right: 5px;
 }
+
 /*Start of Dark & Light Mode*/
 .light-dark {
-  padding: 5px;
+  background-color: antiquewhite;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+.light-dark:hover{
+  border-radius: 50%;
+  background-color: white;
 }
 .light-dark > i {
-  color: white;
+  color: var(--default-color);
   cursor: pointer;
-  padding: 5px;
-}
-.light-dark > .light-theme{
-  display: none;
 }
 
 /*End of Dark & Light Mode*/
