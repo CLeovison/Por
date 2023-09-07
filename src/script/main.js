@@ -10,12 +10,14 @@ function setLight(){
     theme.classList.remove('fa-moon')
     theme.classList.add('fa-sun')
     trial.classList.add('active')
+    document.querySelector('.light-dark > .theme').style.color = 'black';
 }
 function setDark (){
     theme.classList.remove('fa-sun')
     theme.classList.add('fa-moon')
     document.body.classList.remove('active');
     trial.classList.remove('active')
+    document.querySelector('.light-dark > .theme').style.color = 'white';
 }
 
 if(storage === 'light'){
@@ -34,3 +36,4 @@ lightDark.addEventListener('click', ()=>{
     localStorage.setItem('themes', 'dark')
    }
 })
+

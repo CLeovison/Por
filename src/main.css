@@ -33,7 +33,7 @@ main {
   width: 50px;
   height: 100px;
   z-index: -1;
-  transition: all 0.8s ease;
+  transition: all 1.2s ease;
   transform: rotate(45deg);
 }
 .trial.active {
@@ -90,10 +90,7 @@ main {
   padding: 10px 15px;
   border-radius: 50%;
 }
-.light-dark:hover {
-  border-radius: 50%;
-  background-color: white;
-}
+
 .light-dark > i {
   color: var(--default-color);
   cursor: pointer;
