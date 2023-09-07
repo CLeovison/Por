@@ -10,14 +10,14 @@ function setLight() {
   theme.classList.remove("fa-moon");
   theme.classList.add("fa-sun");
   trial.classList.add("active");
-  document.querySelector(".light-dark > .theme").style.color = "black";
+  document.querySelector(".light-dark > .theme").style.color = "#FDB813";
 }
 function setDark() {
   theme.classList.remove("fa-sun");
   theme.classList.add("fa-moon");
   document.body.classList.remove("active");
   trial.classList.remove("active");
-  document.querySelector(".light-dark > .theme").style.color = "white";
+  document.querySelector(".light-dark > .theme").style.color = "#B8AEA3";
 }
 
 if (storage === "light") {
