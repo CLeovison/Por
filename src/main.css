@@ -74,10 +74,28 @@ main {
 .nav-items > a {
   text-decoration: none;
   color: var(--background-color-white);
+  position: relative;
 }
 .nav-items > a:hover {
   color: bisque;
   transition: 0.25s;
+}
+.nav-items > a::after{
+  content: '';
+  height: 3px;
+  width: 100%;
+  background-color: red;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  opacity: 0;
+  transition: all 0.2s;
+  pointer-events: none;
+}
+.nav-items > a:hover::after{
+  opacity: 1;
+  
 }
 .nav-items > a > i {
   padding-right: 5px;
