@@ -35,3 +35,23 @@ lightDark.addEventListener("click", () => {
     localStorage.setItem("themes", "dark");
   }
 });
+
+//Active Navigation Bar
+const navLink = document.querySelectorAll('.nav-link');
+
+
+
+//Skeleton
+
+//Horizontal Scroll for Skills
+
+//Pre-Loader
+
+
+
+
+//Target Javascript Functions
+//1. Active Navigation Bar
+//2. Skeleton
+//3. Horizonal Scroll
+//4. Pre-Loader
