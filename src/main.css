@@ -115,7 +115,7 @@ main {
 /*Start of Hero Section*/
 .Hero {
   width: 100%;
-  height: 720px;
+
 }
 
 .home-intro > h2 {
@@ -143,14 +143,15 @@ main {
 /*Start of Projects*/
 .Projects {
   width: 100%;
-  height: auto;
+
 }
 
 /*End of Projects*/
 
 /*Start of Contact Section*/
-.Contacts {
+.Contacts{
   width: 100%;
+ 
 }
 
 .cntct-list > li {

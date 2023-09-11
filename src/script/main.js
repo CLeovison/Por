@@ -45,7 +45,7 @@ window.addEventListener("scroll", () => {
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
-    if (scrollY >= sectionTop - sectionHeight / 4) {
+    if (scrollY >= sectionTop - sectionHeight / 5) {
       current = section.getAttribute("id");
     }
   });
@@ -68,3 +68,7 @@ window.addEventListener("scroll", () => {
 //2. Skeleton
 //3. Horizonal Scroll
 //4. Pre-Loader
+//5. Light & Dark Mode
+
+//Reference
+// https://codepen.io/dbilanoski/pen/LabpzG - Active Navigation
