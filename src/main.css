@@ -75,7 +75,7 @@ main {
   text-decoration: none;
   color: var(--background-color-white);
 }
-.nav-items > a:hover {
+.nav-items > a:hover, .nav-items.active {
   color: bisque;
   transition: 0.25s;
 }
