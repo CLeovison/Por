@@ -50,7 +50,7 @@ main {
   z-index: 100;
   position: fixed;
   font-size: 16px;
-  background-color: rgba(0, 0, 0, 0.7 );
+  background-color: rgba(0, 0, 0, 0.7);
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
 }
 .nav-title > h2 > a {
@@ -76,7 +76,8 @@ main {
   color: var(--background-color-white);
   position: relative;
 }
-.nav-items > a:hover {
+.nav-items > a:hover,
+.nav-link.active {
   color: bisque;
   transition: 0.25s;
 }
@@ -132,7 +133,7 @@ main {
 /*Start of Hero Section*/
 .Hero {
   width: 100%;
-  height: 720px;
+
 }
 
 .home-intro > h2 {
@@ -160,14 +161,15 @@ main {
 /*Start of Projects*/
 .Projects {
   width: 100%;
-  height: auto;
+
 }
 
 /*End of Projects*/
 
 /*Start of Contact Section*/
-.Contacts {
+.Contacts{
   width: 100%;
+ 
 }
 
 .cntct-list > li {
@@ -191,14 +193,14 @@ main {
   }
 }
 @media screen and (max-width: 650px) {
-  .border{
+  .border {
     background-color: rgba(0, 0, 0, 0.6);
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
-    border-radius: 40px;
+    border-radius: 30px;
+    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     padding-right: 30px;
     padding-left: 40px;
-  
   }
   .navlist {
     position: fixed;
@@ -206,9 +208,6 @@ main {
     width: 100%;
     left: 0;
     bottom: 0;
-   
-
-    
     display: flex;
     justify-content: center;
     align-items: center;

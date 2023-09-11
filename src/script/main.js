@@ -37,6 +37,28 @@ lightDark.addEventListener("click", () => {
 });
 
 //Active Navigation Bar
+<<<<<<< HEAD
+=======
+let navLinkS = document.querySelectorAll(".nav-link");
+let sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+  let current = " ";
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (scrollY >= sectionTop - sectionHeight / 5) {
+      current = section.getAttribute("id");
+    }
+  });
+  navLinkS.forEach((link) => {
+    link.classList.remove("active");
+    if (link.getAttribute("href").slice(1) === current) {
+      link.classList.add("active");
+    }
+  });
+});
+>>>>>>> 6813196a2fd8dd8913f0a9df5deaa51c805610f5
 
 //Skeleton
 
@@ -44,11 +66,12 @@ lightDark.addEventListener("click", () => {
 
 //Pre-Loader
 
-
-
-
 //Target Javascript Functions
 //1. Active Navigation Bar
 //2. Skeleton
 //3. Horizonal Scroll
 //4. Pre-Loader
+//5. Light & Dark Mode
+
+//Reference
+// https://codepen.io/dbilanoski/pen/LabpzG - Active Navigation
