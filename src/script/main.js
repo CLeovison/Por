@@ -37,8 +37,6 @@ lightDark.addEventListener("click", () => {
 });
 
 //Active Navigation Bar
-<<<<<<< HEAD
-=======
 let navLinkS = document.querySelectorAll(".nav-link");
 let sections = document.querySelectorAll("section");
 
@@ -58,7 +56,6 @@ window.addEventListener("scroll", () => {
     }
   });
 });
->>>>>>> 6813196a2fd8dd8913f0a9df5deaa51c805610f5
 
 //Skeleton
 
@@ -75,3 +72,4 @@ window.addEventListener("scroll", () => {
 
 //Reference
 // https://codepen.io/dbilanoski/pen/LabpzG - Active Navigation
+//Light & Dark Mode Section
