@@ -37,7 +37,27 @@ lightDark.addEventListener("click", () => {
 });
 
 //Active Navigation Bar
+let navLinkS = document.querySelectorAll('.nav-link')
+let sections = document.querySelectorAll('section')
 
+window.addEventListener('scroll', ()=>{
+  let current = " ";
+  sections.forEach((section) =>{
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (scrollY >= sectionTop - sectionHeight / 4 ) {
+        current = section.getAttribute("id");
+    }
+  })
+  navLinkS.forEach((link) => {
+    link.classList.remove("active");
+    if (link.getAttribute("href").slice(1) === current) {
+        link.classList.add("active");
+    }
+ 
+});
+
+  })
 
 //Skeleton 
 
