@@ -37,11 +37,9 @@ lightDark.addEventListener("click", () => {
 });
 
 //Active Navigation Bar
-const navLink = document.querySelectorAll('.nav-link');
 
 
-
-//Skeleton
+//Skeleton 
 
 //Horizontal Scroll for Skills
 
