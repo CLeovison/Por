@@ -37,36 +37,31 @@ lightDark.addEventListener("click", () => {
 });
 
 //Active Navigation Bar
-let navLinkS = document.querySelectorAll('.nav-link')
-let sections = document.querySelectorAll('section')
+let navLinkS = document.querySelectorAll(".nav-link");
+let sections = document.querySelectorAll("section");
 
-window.addEventListener('scroll', ()=>{
+window.addEventListener("scroll", () => {
   let current = " ";
-  sections.forEach((section) =>{
+  sections.forEach((section) => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
-    if (scrollY >= sectionTop - sectionHeight / 4 ) {
-        current = section.getAttribute("id");
+    if (scrollY >= sectionTop - sectionHeight / 4) {
+      current = section.getAttribute("id");
     }
-  })
+  });
   navLinkS.forEach((link) => {
     link.classList.remove("active");
     if (link.getAttribute("href").slice(1) === current) {
-        link.classList.add("active");
+      link.classList.add("active");
     }
- 
+  });
 });
 
-  })
-
-//Skeleton 
+//Skeleton
 
 //Horizontal Scroll for Skills
 
 //Pre-Loader
-
-
-
 
 //Target Javascript Functions
 //1. Active Navigation Bar
