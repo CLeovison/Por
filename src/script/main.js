@@ -72,3 +72,4 @@ window.addEventListener("scroll", () => {
 
 //Reference
 // https://codepen.io/dbilanoski/pen/LabpzG - Active Navigation
+//Light & Dark Mode Section
