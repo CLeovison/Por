@@ -74,7 +74,6 @@ main {
 .nav-items > a {
   text-decoration: none;
   color: var(--background-color-white);
-  position: relative;
 }
 .nav-items > a:hover,
 .nav-link.active {
@@ -101,6 +100,7 @@ main {
 .nav-items > a > i {
   padding-right: 5px;
 }
+
 
 /*Start of Dark & Light Mode*/
 .light-dark {
