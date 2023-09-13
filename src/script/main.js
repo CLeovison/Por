@@ -77,12 +77,12 @@ window.addEventListener("scroll", () => {
 //Pre-Loader
 
 //Target Javascript Functions
-//1. Active Navigation Bar
+//1. Active Navigation Bar - Done
 //2. Skeleton
 //3. Horizonal Scroll
 //4. Pre-Loader
-//5. Light & Dark Mode
-//6. Smooth Scrolling
+//5. Light & Dark Mode - Done
+//6. Smooth Scrolling - Done
 
 
 //Reference

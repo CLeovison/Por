@@ -181,6 +181,7 @@ main {
   width: 900px;
 }
 .work-description {
+  text-align: justify;
   padding: 10px;
   color: var(--background-color-white);
 }
@@ -202,6 +203,11 @@ main {
   padding: 7px;
   color: var(--background-color-white);
   text-decoration: none;
+}
+.fa-arrow-right{
+
+  transform: rotate(-45deg);
+  
 }
 .img-container > img {
   padding-top: 10px;
