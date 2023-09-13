@@ -1,3 +1,12 @@
+//Smooth Scroll Navigation
+const navigation = document.querySelector(".navbar");
+const navigationHeight = navigation.offsetHeight;
+
+document.documentElement.style.setProperty(
+  "--scroll-padding",
+  navigationHeight + "px"
+);
+
 //Light & Dark Mode Section
 
 const lightDark = document.querySelector(".light-dark");
@@ -57,6 +66,10 @@ window.addEventListener("scroll", () => {
   });
 });
 
+
+
+
+
 //Skeleton
 
 //Horizontal Scroll for Skills
@@ -69,6 +82,9 @@ window.addEventListener("scroll", () => {
 //3. Horizonal Scroll
 //4. Pre-Loader
 //5. Light & Dark Mode
+//6. Smooth Scrolling
+
 
 //Reference
 // https://codepen.io/dbilanoski/pen/LabpzG - Active Navigation
+// https://codepen.io/kevinpowell/pen/eYjRVmw - Smooth Scrolling

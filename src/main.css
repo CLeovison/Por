@@ -4,7 +4,10 @@
   --text-color: rgba(34, 36, 37, 1);
   --blur-: hsl(0, 29%, 49%);
 }
-
+html{
+  scroll-behavior: smooth;
+  scroll-padding: var(--scroll-padding, 4rem);
+}
 * {
   margin: 0;
   padding: 0;
@@ -175,6 +178,7 @@ main {
   margin: 10px;
   padding: 15px;
   flex-wrap: wrap;
+  width: 900px;
 }
 .work-description {
   padding: 10px;
@@ -272,10 +276,9 @@ main {
   .nav-items > a {
     display: flex;
     justify-content: space-evenly;
-    align-items:center;
+    align-items: center;
     flex-direction: column;
     width: 50px;
-    
   }
 }
 
