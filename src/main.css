@@ -23,8 +23,7 @@ body.active {
 }
 main {
   position: absolute;
-  z-index: 5;
-  width: 100vw;
+  width: 100%;
 }
 .trial {
   position: fixed;
@@ -85,7 +84,6 @@ main {
   padding-right: 5px;
 }
 
-
 /*Start of Dark & Light Mode*/
 .light-dark {
   position: fixed;
@@ -94,14 +92,11 @@ main {
   padding: 10px 15px;
   border-radius: 50%;
 }
-
 .light-dark > i {
   color: var(--default-color);
   cursor: pointer;
 }
-
 /*End of Dark & Light Mode*/
-
 /*End of Navigation Bar*/
 
 /*Start of Global Classes*/
@@ -138,28 +133,26 @@ main {
   border-radius: 10%;
   z-index: -10;
 }
-.main-container{
+/*Start of Experience Section*/
+.main-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-
 }
-.card-container{
-  
+.card-container {
   display: flex;
   border: 1px solid var(--background-color-white);
   color: var(--background-color-white);
   padding: 20px;
   border-radius: 10px;
-  margin: 5px;
 }
-.list{
+.list {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
 }
-.list > li{
+.list > li {
   list-style: none;
 }
 /*End of About Section*/
@@ -168,13 +161,54 @@ main {
 .Projects {
   width: 100%;
 }
+.work {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.main-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid var(--background-color-white);
+  margin: 10px;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+.work-description {
+  padding: 10px;
+  color: var(--background-color-white);
+}
+
+.tech-stack {
+  display: flex;
+  flex-direction: row;
+}
+.tech-stack > li {
+  list-style: none;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+.view-links {
+  padding-top: 15px;
+}
+.view-links > a {
+  border: 1px solid black;
+  padding: 7px;
+  color: var(--background-color-white);
+  text-decoration: none;
+}
+.img-container > img {
+  padding-top: 10px;
+  width: 300px;
+}
 
 /*End of Projects*/
 
 /*Start of Contact Section*/
-.Contacts{
+.Contacts {
   width: 100%;
- 
 }
 
 .cntct-list > li {
@@ -226,8 +260,22 @@ main {
   .prjct-list > div {
     width: auto;
   }
-  .card-container{
+  .card-container {
     width: 80%;
+    margin: 5px;
+  }
+  .main-list {
+    width: 90%;
+  }
+}
+@media (max-width: 400px) {
+  .nav-items > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 47px;
+    padding: 5px;
   }
 }
 
