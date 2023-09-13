@@ -45,7 +45,7 @@ lightDark.addEventListener("click", () => {
   }
 });
 
-//Active Navigation Bar
+//Scroll Active Navigation Bar
 let navLinkS = document.querySelectorAll(".nav-link");
 let sections = document.querySelectorAll("section");
 
@@ -77,7 +77,7 @@ window.addEventListener("scroll", () => {
 //Pre-Loader
 
 //Target Javascript Functions
-//1. Active Navigation Bar - Done
+//1. Scroll Active Navigation Bar - Done
 //2. Skeleton
 //3. Horizonal Scroll
 //4. Pre-Loader

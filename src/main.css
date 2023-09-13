@@ -4,7 +4,7 @@
   --text-color: rgba(34, 36, 37, 1);
   --blur-: hsl(0, 29%, 49%);
 }
-html{
+html {
   scroll-behavior: smooth;
   scroll-padding: var(--scroll-padding, 4rem);
 }
@@ -65,7 +65,7 @@ main {
 }
 .navlist {
   position: fixed;
-  right: 50px;
+  right: 40px;
 }
 .nav-items {
   display: inline-block;
@@ -204,10 +204,8 @@ main {
   color: var(--background-color-white);
   text-decoration: none;
 }
-.fa-arrow-right{
-
+.fa-arrow-right {
   transform: rotate(-45deg);
-  
 }
 .img-container > img {
   padding-top: 10px;
@@ -276,6 +274,9 @@ main {
   }
   .main-list {
     width: 90%;
+  }
+  .title-tdl{
+    text-align: center;
   }
 }
 @media (max-width: 400px) {
