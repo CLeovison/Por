@@ -167,11 +167,11 @@ main {
 .fa-square-js {
   color: rgb(240, 219, 79);
 }
-.fa-wordpress{
-  color:rgb(0, 116, 156)
+.fa-wordpress {
+  color: rgb(0, 116, 156);
 }
-.fa-git-alt{
-  color: rgb(241,	80,	47);
+.fa-git-alt {
+  color: rgb(241, 80, 47);
 }
 /*End of About Section*/
 
@@ -210,6 +210,7 @@ main {
   padding-right: 10px;
   padding-top: 10px;
 }
+
 .view-links {
   padding-top: 15px;
 }
@@ -297,7 +298,7 @@ main {
     display: none;
   }
   .img-container > img {
-    width: 370px;
+    width: 320px;
   }
 }
 @media (max-width: 400px) {
@@ -308,6 +309,7 @@ main {
     flex-direction: column;
     width: 50px;
   }
+
 }
 
 /*End of Media Queries*/

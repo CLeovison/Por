@@ -20,6 +20,7 @@ function setLight() {
   theme.classList.add("fa-sun");
   trial.classList.add("active");
   document.querySelector(".light-dark > .theme").style.color = "#FDB813";
+
 }
 function setDark() {
   theme.classList.remove("fa-sun");
@@ -27,6 +28,7 @@ function setDark() {
   document.body.classList.remove("active");
   trial.classList.remove("active");
   document.querySelector(".light-dark > .theme").style.color = "#B8AEA3";
+
 }
 
 if (storage === "light") {
@@ -35,14 +37,17 @@ if (storage === "light") {
   setDark();
 }
 
-lightDark.addEventListener("click", () => {
+lightDark.addEventListener("click", (e) => {
   if (theme.classList.contains("fa-moon")) {
     setLight();
     localStorage.setItem("themes", "light");
+
   } else {
     setDark();
     localStorage.setItem("themes", "dark");
+
   }
+  
 });
 
 //Scroll Active Navigation Bar
