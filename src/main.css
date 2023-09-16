@@ -114,17 +114,30 @@ main {
   color: var(--background-color-white);
 }
 /*End of Global Classes*/
+.preloader{
+  height: 720px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+}
+.loader-img > img{
+  width: 300px;
+  transform: rotate(25deg);
+  animation: plane 1s ;
+}
+
 
 /*Start of Hero Section*/
 .Hero {
   width: 100%;
-
- }
+}
 .home-intro {
   display: flex;
   justify-content: space-around;
-  align-items:center;
-  flex-wrap: wrap;  
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .intro > h2 {
@@ -139,13 +152,10 @@ main {
   color: var(--background-color-white);
 }
 
-
 .img > img {
   width: 400px;
   border-radius: 10%;
   z-index: -10;
- 
-  
 }
 
 /*End of Hero Section*/
@@ -309,7 +319,8 @@ main {
     align-items: center;
     flex-direction: column;
   }
-  .intro > h2, p{
+  .intro > h2,
+  p {
     padding-bottom: 20px;
   }
 
@@ -348,3 +359,6 @@ main {
 }
 
 /*End of Media Queries*/
+
+
+/*Animated Airplane Moving With A Text StandBy on Pre-Loader*/
