@@ -189,11 +189,15 @@ End of Pre-Loader Section */
   padding-bottom: 10px;
 }
 
+.hero-sec > img{ 
+  width: 450px;
+}
 .img > img {
 
   width: 400px;
   border-radius: 10%;
   z-index: -10;
+  padding: 10px;
 }
 .more{
   display: flex;
@@ -222,9 +226,17 @@ End of Pre-Loader Section */
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-
+.information > p{
+  padding: 20px;
+  text-align: justify;
+  font-size: 20px;
+    color: var(--background-color-white);
+}
 
 /*Start of Experience Section*/
+.experience{
+ 
+}
 .main-container {
   display: flex;
   justify-content: space-evenly;
@@ -266,6 +278,7 @@ End of Pre-Loader Section */
 /*Start of Projects*/
 .Projects {
   width: 100%;
+
 }
 .work {
   display: flex;
