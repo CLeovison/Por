@@ -234,9 +234,7 @@ End of Pre-Loader Section */
 }
 
 /*Start of Experience Section*/
-.experience{
- 
-}
+
 .main-container {
   display: flex;
   justify-content: space-evenly;
@@ -412,6 +410,10 @@ End of Pre-Loader Section */
 
   .techs {
     display: none;
+  }
+  .main-style{
+    width: 100%;
+    height: 40px;
   }
 }
 @media (width < 400px) {
