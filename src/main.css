@@ -404,7 +404,7 @@ main {
   }
 
   .navlist {
-    position: fixed;
+ 
     height: 60px;
     width: 100%;
     left: 0;
@@ -414,6 +414,7 @@ main {
     align-items: center;
   }
   .nav-items > a {
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
