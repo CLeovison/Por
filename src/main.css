@@ -2,7 +2,7 @@
   --main-color: rgb(47, 47, 47);
   --background-color-white: rgba(255, 255, 247);
   --text-color: rgba(34, 36, 37, 1);
-  --blur-: hsl(0, 29%, 49%);
+
 }
 html {
   scroll-behavior: smooth;
@@ -54,7 +54,7 @@ main {
   align-items: center;
   position: fixed;
   font-size: 16px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--main-color);
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
 }
 .nav-title > h2 > a {
