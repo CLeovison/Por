@@ -52,7 +52,6 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
   position: fixed;
   font-size: 16px;
   background-color: rgba(0, 0, 0, 0.7);
