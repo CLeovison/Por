@@ -141,6 +141,21 @@ main {
 }
 /*End of Global Classes*/
 
+
+/*Start of Hero Section*/
+.Hero{
+  width: 100%;
+}
+.contents{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+}
+.img-details > img{
+  border-radius: 20px;
+  width: 300px;
+}
 /*Start of Media Queries*/
 @media (min-width: 650px) {
   .nav-items > a > i {
