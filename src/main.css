@@ -2,8 +2,6 @@
   --main-color: rgb(47, 47, 47);
   --background-color-white: rgba(255, 255, 247);
   --text-color: rgba(34, 36, 37, 1);
-  --link-text: rgb()
-
 }
 html {
   scroll-behavior: smooth;
@@ -22,7 +20,6 @@ body {
   line-height: 1.5;
 }
 body.active {
-
   --background-color-white: rgba(34, 36, 37, 1);
   --text-color: rgba(34, 36, 37, 1);
 }
@@ -85,11 +82,11 @@ main {
   color: bisque;
   transition: 0.25s;
 }
-.nav-items{
+.nav-items {
   position: relative;
 }
-.nav-items::before{
-  content: '';
+.nav-items::before {
+  content: "";
   position: absolute;
   width: 100%;
   height: 2px;
@@ -102,7 +99,7 @@ main {
   transition: transform 0.5s ease;
   pointer-events: none;
 }
-.nav-items:hover::before{
+.nav-items:hover::before {
   transform: scaleX(1);
   transform-origin: left;
   opacity: 1;
@@ -127,16 +124,13 @@ main {
 /*End of Navigation Bar*/
 
 /*Start of Global Classes*/
-.main-header {
-  text-align: center;
-  font-size: 30px;
-  font-weight: 700;
-  padding: 10px;
-  color: var(--background-color-white);
-}
+
 /*End of Global Classes*/
 
-
+/*Start of Hero Section*/
+.Home{
+  width: 100%;
+}
 
 /*Start of Media Queries*/
 @media (min-width: 650px) {
@@ -145,12 +139,6 @@ main {
   }
 }
 @media (width < 650px) {
-  .border {
-    position: fixed;
-    
-    padding-right: 20px;
-    padding-left: 30px;
-  }
 
   .navlist {
     position: fixed;
@@ -163,7 +151,7 @@ main {
     align-items: center;
     background-color: var(--main-color);
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
-   
+
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
   }
@@ -174,7 +162,6 @@ main {
     flex-direction: column;
     color: white;
   }
-  
 }
 @media (width < 400px) {
   .nav-items > a {
@@ -187,4 +174,3 @@ main {
 }
 
 /*End of Media Queries*/
-

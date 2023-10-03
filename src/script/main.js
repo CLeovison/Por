@@ -13,7 +13,7 @@ document.documentElement.style.setProperty(
   navigationHeight + "px"
 );
 
-//Light & Dark Mode Section
+//Start of Light & Dark Mode Section//
 
 const lightDark = document.querySelector(".light-dark");
 let theme = document.querySelector(".light-dark > .theme");
@@ -26,7 +26,6 @@ function setLight() {
   theme.classList.add("fa-sun");
   trial.classList.add("active");
   document.querySelector(".light-dark > .theme").style.color = "#FDB813";
-
 }
 function setDark() {
   theme.classList.remove("fa-sun");
@@ -34,7 +33,6 @@ function setDark() {
   document.body.classList.remove("active");
   trial.classList.remove("active");
   document.querySelector(".light-dark > .theme").style.color = "#B8AEA3";
-
 }
 
 if (storage === "light") {
@@ -47,14 +45,13 @@ lightDark.addEventListener("click", (e) => {
   if (theme.classList.contains("fa-moon")) {
     setLight();
     localStorage.setItem("themes", "light");
-
   } else {
     setDark();
     localStorage.setItem("themes", "dark");
-
   }
   
 });
+//End of Light & Dark Mode Section//
 
 //Scroll Active Navigation Bar
 let navLinkS = document.querySelectorAll(".nav-link");
@@ -82,9 +79,7 @@ window.addEventListener("scroll", () => {
 
 
 //Skeleton
-
 //Horizontal Scroll for Skills
-
 //Pre-Loader
 
 //Target Javascript Functions
