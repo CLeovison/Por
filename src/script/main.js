@@ -44,7 +44,7 @@ if (storage === "light") {
 }
 
 lightDark.addEventListener("click", (e) => {
-  if (theme.classList.contains("fa-moon")) {
+  if (theme.classList.contains("fa-moon")) { 
     setLight();
     localStorage.setItem("themes", "light");
 
@@ -77,14 +77,18 @@ window.addEventListener("scroll", () => {
   });
 });
 
+//Light Dark Mode Section Documentation
+
+// The ClassList contains will be executed if the value that has been declared was there, 
+// Meaning if the value is true then it will be executed, if false then it will not be executed
+
+
 
 
 
 
 //Skeleton
-
 //Horizontal Scroll for Skills
-
 //Pre-Loader
 
 //Target Javascript Functions
