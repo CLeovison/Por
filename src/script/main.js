@@ -82,11 +82,6 @@ window.addEventListener("scroll", () => {
 // The ClassList contains will be executed if the value that has been declared was there, 
 // Meaning if the value is true then it will be executed, if false then it will not be executed
 
-
-
-
-
-
 //Skeleton
 //Horizontal Scroll for Skills
 //Pre-Loader
