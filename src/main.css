@@ -1,7 +1,5 @@
 /*Fonts*/
 
-
-
 :root {
   --main-color: rgb(47, 47, 47);
   --background-color-white: rgba(255, 253, 209);
@@ -9,7 +7,7 @@
   --color-matching: rgba(255, 139, 40);
   --color-links: rgba(251, 228, 216);
   --trial: rgba(255, 140, 90);
-  --font-:'Poppins', sans-serif;
+  --font-: "Poppins", sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -65,7 +63,6 @@ main {
   font-size: 16px;
   background-color: var(--main-color);
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
-
 }
 .nav-title > h2 > a {
   padding-left: 20px;
@@ -137,25 +134,25 @@ main {
 
 /*Start of Global Classes*/
 .main-header {
-  text-align: center;
-  font-size: 30px;
+  font-size: 1.5rem;
   font-weight: 700;
   padding: 10px;
   color: var(--background-color-white);
 }
+section {
+  width: 100%;
+  height: 720px;
+}
 /*End of Global Classes*/
 
 /*Start of Hero Section*/
-.Hero {
-  width: 100%;
 
-}
 .contents {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
 .img-details {
@@ -168,39 +165,47 @@ main {
   padding-top: 20px;
   width: 330px;
 }
-.header{
+.header {
   text-align: center;
   font-size: 35px;
 }
-.details{
+.details {
   text-align: center;
 }
-.button{
+.button {
   padding-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.btn-me{
+.btn-me {
   border: 1px solid var(--background-color-white);
   padding: 10px;
   text-decoration: none;
   color: var(--background-color-white);
   border-radius: 5px;
 }
-.btn-me:hover{
+.btn-me:hover {
   background-color: var(--trial);
   color: var(--color-links);
 }
 /* End of Hero Section */
 
-
 /* Start of About Section */
-.Abouts{
-  width: 100%;
-
+.information {
+  padding: 10px;
 }
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+}
+.skills > li {
+  list-style: none;
+  padding-top: 10px;
+}
+
 /* End of About Section */
+
 /*Start of Media Queries*/
 @media (min-width: 650px) {
   .nav-items > a > i {
@@ -210,7 +215,6 @@ main {
 @media (width < 650px) {
   .border {
     position: fixed;
-
     padding-right: 20px;
     padding-left: 30px;
   }
@@ -235,6 +239,30 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  .descriptive {
+    text-align: justify;
+  }
+  .header {
+    font-size: 25px;
+  }
+  .details{
+    font-size: 12px;
+  }
+
+
+
+  /*Hero Section Contents*/
+  .img-details > img {
+    width: 250px;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .skills > li {
+    padding-left: 10px;
   }
 }
 @media (width < 400px) {

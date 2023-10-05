@@ -77,14 +77,16 @@ window.addEventListener("scroll", () => {
   });
 });
 
-//Light Dark Mode Section Documentation
+//Documentation//
+
+//1. Light Dark Mode Section 
 
 // The ClassList contains will be executed if the value that has been declared was there, 
 // Meaning if the value is true then it will be executed, if false then it will not be executed
 
-//Skeleton
-//Horizontal Scroll for Skills
-//Pre-Loader
+
+
+
 
 //Target Javascript Functions
 //1. Scroll Active Navigation Bar - Done
@@ -93,7 +95,7 @@ window.addEventListener("scroll", () => {
 //4. Pre-Loader
 //5. Light & Dark Mode - Done
 //6. Smooth Scrolling - Done
-
+//7. Scroll Timeline Animation
 
 //Reference
 // https://codepen.io/dbilanoski/pen/LabpzG - Active Navigation
