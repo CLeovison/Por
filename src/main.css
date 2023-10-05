@@ -175,6 +175,23 @@ main {
 .details{
   text-align: center;
 }
+.button{
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-me{
+  border: 1px solid var(--background-color-white);
+  padding: 10px;
+  text-decoration: none;
+  color: var(--background-color-white);
+  border-radius: 5px;
+}
+.btn-me:hover{
+  background-color: var(--trial);
+  color: var(--color-links);
+}
 /* End of Hero Section */
 
 
