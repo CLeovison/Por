@@ -200,8 +200,9 @@ section {
   grid-template-columns: repeat(2, 250px);
 }
 .skills > li {
-  list-style: none;
+  list-style: circle;
   padding-top: 10px;
+  margin-left: 20px;
 }
 
 /* End of About Section */
@@ -261,14 +262,14 @@ section {
     width: 350px;
   }
   .skills {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(2, 170px);
   }
   .skills > li {
-    padding-left: 10px;
+    list-style: circle;
   }
-  .break > br{
+  .break > br {
     display: none;
   }
 }
@@ -279,6 +280,11 @@ section {
     align-items: center;
     flex-direction: column;
     width: 50px;
+  }
+  .skills {
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(2, 160px);
   }
 }
 
