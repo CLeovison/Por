@@ -246,15 +246,19 @@ section {
   .header {
     font-size: 25px;
   }
-  .details{
+  .details {
     font-size: 12px;
   }
 
-
-
   /*Hero Section Contents*/
+  .img-details {
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: var(--trial);
+    height: 510px;
+  }
   .img-details > img {
-    width: 250px;
+    width: 350px;
   }
   .skills {
     display: flex;
