@@ -81,6 +81,7 @@ main {
   list-style: none;
   padding: 10px;
   font-size: 18px;
+  position: relative;
 }
 .nav-items > a {
   text-decoration: none;
@@ -91,9 +92,7 @@ main {
   color: var(--trial);
   transition: 0.25s;
 }
-.nav-items {
-  position: relative;
-}
+
 .nav-items::before {
   content: "";
   position: absolute;
@@ -141,7 +140,10 @@ main {
 }
 section {
   width: 100%;
-  }
+}
+/* .height{
+  min-height: 50vh;
+} */
 /*End of Global Classes*/
 
 /*Start of Hero Section*/
@@ -191,7 +193,7 @@ section {
 /* End of Hero Section */
 
 /* Start of About Section */
-.container{
+.container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
