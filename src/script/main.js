@@ -9,7 +9,7 @@ const navigation = document.querySelector(".navbar");
 const navigationHeight = navigation.offsetHeight;
 
 document.documentElement.style.setProperty(
-  "--scroll-padding",
+  "--scroll-padding", 
   navigationHeight + "px"
 );
 
@@ -75,7 +75,7 @@ window.addEventListener("scroll", () => {
       link.classList.add("active");
     }
   });
-});
+ });
 
 //Documentation//
 

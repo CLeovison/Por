@@ -8,6 +8,8 @@
   --color-links: rgba(251, 228, 216);
   --trial: rgba(255, 140, 90);
   --font-: "Poppins", sans-serif;
+  --dark-mode-text: rgb(211, 211, 211);
+
 }
 html {
   scroll-behavior: smooth;
@@ -30,6 +32,7 @@ body.active {
   --text-color: rgba(34, 36, 37, 1);
   --color-links: rgba(251, 228, 216);
   --trial: rgba(255, 139, 40);
+  --dark-mode-text: rgb(18, 18, 18);
 }
 main {
   position: absolute;
@@ -201,6 +204,10 @@ section {
 .information {
   padding: 10px;
 }
+.descriptive{
+  color: var(--dark-mode-text);
+}
+
 .skills {
   display: grid;
   grid-template-columns: repeat(2, 250px);
@@ -209,6 +216,7 @@ section {
   list-style: circle;
   padding-top: 10px;
   margin-left: 20px;
+  color: var(--dark-mode-text);
 }
 
 /* End of About Section */
@@ -249,6 +257,7 @@ section {
   }
   .descriptive {
     text-align: justify;
+   
   }
   .header {
     font-size: 25px;
