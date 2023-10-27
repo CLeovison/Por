@@ -46,7 +46,7 @@ main {
   width: 50px;
   height: 100px;
   z-index: -1;
-  transition: all 1.2s ease-in-out;
+  transition: all 1s ease-in-out;
   transform: rotate(45deg);
 }
 
@@ -171,10 +171,15 @@ section {
 }
 .header {
   text-align: center;
-  font-size: 35px;
+  font-size: 40px;
+  color: var(--dark-mode-text);
+  padding: 10px;
 }
 .details {
+  font-size: 20px;
   text-align: center;
+  color: var(--dark-mode-text);
+  padding: 10px;
 }
 .button {
   padding-top: 10px;
@@ -260,10 +265,10 @@ section {
    
   }
   .header {
-    font-size: 25px;
+    font-size: 35px;
   }
   .details {
-    font-size: 12px;
+    font-size: 18px;
   }
 
   /*Hero Section Contents*/
