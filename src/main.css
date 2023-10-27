@@ -139,7 +139,7 @@ main {
   font-size: 1.5rem;
   font-weight: 700;
   padding: 10px;
-  color: var(--background-color-white);
+  color: var(--dark-mode-text);
 }
 section {
   width: 100%;
