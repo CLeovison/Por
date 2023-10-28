@@ -172,9 +172,11 @@ section {
 .header {
   text-align: center;
   font-size: 35px;
+  color: var(--dark-mode-text);
 }
 .details {
   text-align: center;
+  color: var(--dark-mode-text);
 }
 .button {
   padding-top: 10px;

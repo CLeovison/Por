@@ -77,6 +77,9 @@ window.addEventListener("scroll", () => {
   });
  });
 
+
+
+
 //Documentation//
 
 //1. Light Dark Mode Section 
