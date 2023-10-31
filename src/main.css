@@ -9,7 +9,6 @@
   --trial: rgba(255, 140, 90);
   --font-: "Poppins", sans-serif;
   --dark-mode-text: rgb(211, 211, 211);
-
 }
 html {
   scroll-behavior: smooth;
@@ -144,10 +143,26 @@ main {
 section {
   width: 100%;
 }
-/* .height{
-  min-height: 50vh;
-} */
+/* Start of Scroll Bar Design */
+::-webkit-scrollbar {
+  width: 0.7rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: hsl(180, 6%, 16%);
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--main-color);
+}
+::-webkit-scrollbar-track {
+  background-color: hsla(0, 4%, 82%, 0.37);
+  border-radius: 2rem;
+}
+/* End of Scroll Bar Design */
+
 /*End of Global Classes*/
+
+
 
 /*Start of Hero Section*/
 
@@ -207,7 +222,7 @@ section {
 .information {
   padding: 10px;
 }
-.descriptive{
+.descriptive {
   color: var(--dark-mode-text);
 }
 
@@ -223,6 +238,8 @@ section {
 }
 
 /* End of About Section */
+
+/* Start of Project Section */
 
 /*Start of Media Queries*/
 @media (min-width: 650px) {
@@ -260,7 +277,6 @@ section {
   }
   .descriptive {
     text-align: justify;
-   
   }
   .header {
     font-size: 35px;
