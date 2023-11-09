@@ -37,11 +37,7 @@ function setDark() {
 
 }
 
-if (storage === "light") {
-  setLight();
-} else {
-  setDark();
-}
+storage === "light" ? setLight() : setDark();
 
 lightDark.addEventListener("click", (e) => {
   if (theme.classList.contains("fa-moon")) { 
