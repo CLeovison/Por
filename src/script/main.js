@@ -1,9 +1,3 @@
-//Pre Loader
-window.addEventListener('loader', ()=>{
-  const preloader = document.querySelector('.preloader');
-  preloader.classList.add('active');
-})
-
 //Smooth Scroll Navigation
 const navigation = document.querySelector(".navbar");
 const navigationHeight = navigation.offsetHeight;
