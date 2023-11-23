@@ -9,6 +9,8 @@
   --trial: rgba(255, 140, 90);
   --font-: "Poppins", sans-serif;
   --dark-mode-text: rgb(211, 211, 211);
+  --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+
 }
 html {
   scroll-behavior: smooth;
@@ -207,10 +209,15 @@ section {
   text-decoration: none;
   color: var(--background-color-white);
   border-radius: 5px;
+  transition: var(--transition);
 }
 .btn-me:hover {
   background-color: var(--trial);
-  color: var(--color-links);
+  outline: none;
+  box-shadow: 3.5px 3.5px 0 0 #F9A825;
+  transform: translate(-5px, -5px);
+  color: var(--main-color);
+  border: none;
 }
 /* End of Hero Section */
 
