@@ -3,7 +3,7 @@ const navigation = document.querySelector(".navbar");
 const navigationHeight = navigation.offsetHeight;
 
 document.documentElement.style.setProperty(
-  "--scroll-padding", 
+  "--scroll-padding",
   navigationHeight + "px"
 );
 
@@ -20,7 +20,6 @@ function setLight() {
   theme.classList.add("fa-sun");
   trial.classList.add("active");
   document.querySelector(".light-dark > .theme").style.color = "#FDB813";
-
 }
 function setDark() {
   theme.classList.remove("fa-sun");
@@ -28,22 +27,18 @@ function setDark() {
   document.body.classList.remove("active");
   trial.classList.remove("active");
   document.querySelector(".light-dark > .theme").style.color = "#B8AEA3";
-
 }
 
 storage === "light" ? setLight() : setDark();
 
 lightDark.addEventListener("click", (e) => {
-  if (theme.classList.contains("fa-moon")) { 
+  if (theme.classList.contains("fa-moon")) {
     setLight();
     localStorage.setItem("themes", "light");
-
   } else {
     setDark();
     localStorage.setItem("themes", "dark");
-
   }
-  
 });
 
 //Scroll Active Navigation Bar
@@ -65,21 +60,44 @@ window.addEventListener("scroll", () => {
       link.classList.add("active");
     }
   });
- });
+});
 
+//Intersection Observer
 
+function createObserver() {
+  let options = {
+    root: document.querySelector("#scrollArea"),
+    rootMargin: "0px",
+    threshold: 1.0,
+  };
 
+  let observer = new IntersectionObserver(callback, options);
+
+  let target = document.querySelector("#listItem");
+  observer.observe(target);
+
+  let callback = (entries, observer) => {
+    entries.forEach((entry) => {
+      // Each entry describes an intersection change for one observed
+      // target element:
+      //   entry.boundingClientRect
+      //   entry.intersectionRatio
+      //   entry.intersectionRect
+      //   entry.isIntersecting
+      //   entry.rootBounds
+      //   entry.target
+      //   entry.time
+    });
+  };
+}
+createObserver();
 
 //Documentation//
 
-//1. Light Dark Mode Section 
+//1. Light Dark Mode Section
 
-// The ClassList contains will be executed if the value that has been declared was there, 
+// The ClassList contains will be executed if the value that has been declared was there,
 // Meaning if the value is true then it will be executed, if false then it will not be executed
-
-
-
-
 
 //Target Javascript Functions
 //1. Scroll Active Navigation Bar - Done
@@ -92,5 +110,3 @@ window.addEventListener("scroll", () => {
 //Reference
 // https://codepen.io/dbilanoski/pen/LabpzG - Active Navigation
 // https://codepen.io/kevinpowell/pen/eYjRVmw - Smooth Scrolling
-
-
