@@ -13,7 +13,8 @@ smoothScroll();
 
 //Start of Light & Dark Mode Section
 
-const lightDark = document.querySelector(".light-dark");
+function lightDark(){
+  const lightDark = document.querySelector(".light-dark");
 let theme = document.querySelector(".light-dark > .theme");
 let storage = localStorage.getItem("themes");
 const trial = document.querySelector(".trial");
@@ -44,6 +45,9 @@ lightDark.addEventListener("click", (e) => {
     localStorage.setItem("themes", "dark");
   }
 });
+}
+
+lightDark()
 //End of Light & Dark Mode Section
 
 //Start of Scroll Active Navigation Bar
