@@ -1,13 +1,17 @@
-//Smooth Scroll Navigation
-const navigation = document.querySelector(".navbar");
-const navigationHeight = navigation.offsetHeight;
+//Start of Smooth Scroll Navigation
+function smoothScroll() {
+  const navigation = document.querySelector(".navbar");
+  const navigationHeight = navigation.offsetHeight;
 
-document.documentElement.style.setProperty(
-  "--scroll-padding",
-  navigationHeight + "px"
-);
+  document.documentElement.style.setProperty(
+    "--scroll-padding",
+    navigationHeight + "px"
+  );
+}
+smoothScroll();
+//End of Smooth Scroll Navigation
 
-//Light & Dark Mode Section
+//Start of Light & Dark Mode Section
 
 const lightDark = document.querySelector(".light-dark");
 let theme = document.querySelector(".light-dark > .theme");
@@ -40,41 +44,37 @@ lightDark.addEventListener("click", (e) => {
     localStorage.setItem("themes", "dark");
   }
 });
+//End of Light & Dark Mode Section
 
-//Scroll Active Navigation Bar
-let navLinkS = document.querySelectorAll(".nav-link");
-let sections = document.querySelectorAll("section");
+//Start of Scroll Active Navigation Bar
 
-window.addEventListener("scroll", () => {
-  let current = " ";
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
-    if (scrollY >= sectionTop - sectionHeight / 5) {
-      current = section.getAttribute("id");
-    }
+function scrollActive() {
+  let navLinkS = document.querySelectorAll(".nav-link");
+  let sections = document.querySelectorAll("section");
+
+  window.addEventListener("scroll", () => {
+    let current = " ";
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (scrollY >= sectionTop - sectionHeight / 5) {
+        current = section.getAttribute("id");
+      }
+    });
+    navLinkS.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href").slice(1) === current) {
+        link.classList.add("active");
+      }
+    });
   });
-  navLinkS.forEach((link) => {
-    link.classList.remove("active");
-    if (link.getAttribute("href").slice(1) === current) {
-      link.classList.add("active");
-    }
-  });
-});
-
-//Intersection Observer
-function createObserver() {
-
 }
+scrollActive();
+//End of Scroll Active Navigation Bar
 
+//Start of Intersection Observer
 
-window.addEventListener('load', ()=>{
-  createObserver();
-})
-
-
-
-
+//End of Intersection Observer
 
 //Documentation//
 
@@ -89,7 +89,9 @@ window.addEventListener('load', ()=>{
 //3. Pre-Loader
 //4. Light & Dark Mode - Done
 //5. Smooth Scrolling - Done
-//6. Scroll Timeline Animation
+//6. Intersection Observer
+//7. View Transition Timeline
+
 
 //Reference
 // https://codepen.io/dbilanoski/pen/LabpzG - Active Navigation
