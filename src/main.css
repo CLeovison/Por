@@ -133,12 +133,13 @@ main {
   cursor: pointer;
 }
 /*End of Dark & Light Mode*/
+
 /*End of Navigation Bar*/
 
 /*Start of Global Classes*/
 .main-header {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 600;
   padding: 10px;
   color: var(--dark-mode-text);
 }
@@ -159,7 +160,8 @@ section {
 ::-webkit-scrollbar-track {
   background-color: hsla(0, 4%, 82%, 0.37);
   border-radius: 2rem;
-}
+} 
+
 /* End of Scroll Bar Design */
 
 /*End of Global Classes*/
@@ -232,6 +234,7 @@ section {
 }
 .descriptive {
   color: var(--dark-mode-text);
+  font-size: 1.05em;
 }
 
 .skills {
@@ -245,9 +248,33 @@ section {
   color: var(--dark-mode-text);
 }
 
+
+/* Start of Experience Section */
+.experience-title > h1{
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 10px;
+  color: var(--dark-mode-text);
+}
+
+.prev-exp{
+  padding: 10px;
+}
+.company > p{
+  font-size: 1.1em;
+  color: var(--dark-mode-text);
+  padding: 10px;
+
+}
+/* End of Experience Section */
+
 /* End of About Section */
 
+
 /* Start of Project Section */
+
+
+/* End of Project Section */
 
 /*Start of Media Queries*/
 @media (min-width: 650px) {
@@ -284,6 +311,7 @@ section {
   }
   .descriptive {
     text-align: justify;
+  
   }
   .header {
     font-size: 35px;
