@@ -246,34 +246,45 @@ section {
 }
 
 /* Start of Experience Section */
-.Experience{
+.Experience {
   width: 100%;
 }
-.exp-container{
+.exp-container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.exp-title{
+.exp-title {
   font-weight: 600;
   font-size: 1.5em;
   color: var(--dark-mode-text);
   padding: 10px;
 }
-.company-name{
+.company-name {
   color: var(--dark-mode-text);
   padding: 10px;
 }
-.company-name > span{
+.company-name > span {
   font-size: 1.1em;
 }
 
-.descrip > ul{
-    padding: 10px;
-    color: var(--dark-mode-text);
+.descrip > ul {
+  padding: 10px;
+  color: var(--dark-mode-text);
 }
-.descrip > ul > li{
-  list-style:url();
+.descrip > ul > li {
+  list-style: url();
+}
+.title-start {
+  display: flex;
+  flex-direction: column;
+  color: var(--dark-mode-text);
+}
+.title-start > span:nth-child(1){
+  font-weight: 600;
+}
+.title-start > span:nth-child(2){
+  padding-top: 5px;
 }
 /* End of Experience Section */
 
@@ -346,18 +357,16 @@ section {
   }
   .break > br {
     display: none;
-  } 
-
+  }
 
   /* Start of Experience Section*/
-  .prev-exp{
+  .prev-exp {
     display: flex;
     justify-content: space-evenly;
   }
-  .company-name > span{
+  .company-name > span {
     font-size: 0.85em;
   }
-
 }
 @media (width < 400px) {
   .nav-items > a {
@@ -372,7 +381,7 @@ section {
     place-content: center;
     grid-template-columns: repeat(2, 160px);
   }
-  .company-name > span{
+  .company-name > span {
     font-size: 0.8em;
   }
 }
