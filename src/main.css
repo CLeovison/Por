@@ -246,27 +246,35 @@ section {
 }
 
 /* Start of Experience Section */
-.experience-title > h1 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  padding: 10px;
-  color: var(--dark-mode-text);
+.Experience{
+  width: 100%;
 }
-
-.prev-exp {
-  padding: 10px;
-}
-.company {
+.exp-container{
   display: flex;
-  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
-.company > p {
-  font-size: 1.1em;
+.exp-title{
+  font-weight: 600;
+  font-size: 1.5em;
   color: var(--dark-mode-text);
   padding: 10px;
 }
+.company-name{
+  color: var(--dark-mode-text);
+  padding: 10px;
+}
+.company-name > span{
+  font-size: 1.1em;
+}
 
-
+.descrip > ul{
+    padding: 10px;
+    color: var(--dark-mode-text);
+}
+.descrip > ul > li{
+  list-style:url();
+}
 /* End of Experience Section */
 
 /* End of About Section */
@@ -338,7 +346,18 @@ section {
   }
   .break > br {
     display: none;
+  } 
+
+
+  /* Start of Experience Section*/
+  .prev-exp{
+    display: flex;
+    justify-content: space-evenly;
   }
+  .company-name > span{
+    font-size: 0.85em;
+  }
+
 }
 @media (width < 400px) {
   .nav-items > a {
@@ -352,6 +371,9 @@ section {
     display: grid;
     place-content: center;
     grid-template-columns: repeat(2, 160px);
+  }
+  .company-name > span{
+    font-size: 0.8em;
   }
 }
 
