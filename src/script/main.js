@@ -12,42 +12,40 @@ smoothScroll();
 //End of Smooth Scroll Navigation
 
 //Start of Light & Dark Mode Section
-
-function lightDark(){
+function lightDark() {
   const lightDark = document.querySelector(".light-dark");
-let theme = document.querySelector(".light-dark > .theme");
-let storage = localStorage.getItem("themes");
-const trial = document.querySelector(".trial");
+  let theme = document.querySelector(".light-dark > .theme");
+  let storage = localStorage.getItem("themes");
+  const trial = document.querySelector(".trial");
 
-function setLight() {
-  document.body.classList.add("active");
-  theme.classList.remove("fa-moon");
-  theme.classList.add("fa-sun");
-  trial.classList.add("active");
-  document.querySelector(".light-dark > .theme").style.color = "#FDB813";
-}
-function setDark() {
-  theme.classList.remove("fa-sun");
-  theme.classList.add("fa-moon");
-  document.body.classList.remove("active");
-  trial.classList.remove("active");
-  document.querySelector(".light-dark > .theme").style.color = "#B8AEA3";
-}
-
-storage === "light" ? setLight() : setDark();
-
-lightDark.addEventListener("click", (e) => {
-  if (theme.classList.contains("fa-moon")) {
-    setLight();
-    localStorage.setItem("themes", "light");
-  } else {
-    setDark();
-    localStorage.setItem("themes", "dark");
+  function setLight() {
+    document.body.classList.add("active");
+    theme.classList.remove("fa-moon");
+    theme.classList.add("fa-sun");
+    trial.classList.add("active");
+    document.querySelector(".light-dark > .theme").style.color = "#FDB813";
   }
-});
-}
+  function setDark() {
+    theme.classList.remove("fa-sun");
+    theme.classList.add("fa-moon");
+    document.body.classList.remove("active");
+    trial.classList.remove("active");
+    document.querySelector(".light-dark > .theme").style.color = "#B8AEA3";
+  }
 
-lightDark()
+  storage === "light" ? setLight() : setDark();
+
+  lightDark.addEventListener("click", (e) => {
+    if (theme.classList.contains("fa-moon")) {
+      setLight();
+      localStorage.setItem("themes", "light");
+    } else {
+      setDark();
+      localStorage.setItem("themes", "dark");
+    }
+  });
+}
+lightDark();
 //End of Light & Dark Mode Section
 
 //Start of Scroll Active Navigation Bar
@@ -76,10 +74,30 @@ function scrollActive() {
 scrollActive();
 //End of Scroll Active Navigation Bar
 
-//Start of Intersection Observer
+//Tabs
+function tabs() {
+  const companys = document.querySelectorAll(".company-name");
+  const description = document.querySelectorAll(".descrip");
 
-//End of Intersection Observer
+  companys.forEach((company) => {
+    company.addEventListener("click", () => {
 
+      const index  = [...companys].indexOf(company);
+      companys.forEach((x) => {
+        x.classList.remove("active");
+      });
+
+      company.classList.add("active");
+
+      description.forEach((descrip) => {
+        descrip.classList.remove("active");
+      });
+      description[index].classList.add('active')
+
+    });
+  });
+}
+tabs();
 //Documentation//
 
 //1. Light Dark Mode Section
@@ -95,7 +113,6 @@ scrollActive();
 //5. Smooth Scrolling - Done
 //6. Intersection Observer
 //7. View Transition Timeline
-
 
 //Reference
 // https://codepen.io/dbilanoski/pen/LabpzG - Active Navigation

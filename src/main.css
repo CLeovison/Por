@@ -249,6 +249,13 @@ section {
 .Experience {
   width: 100%;
 }
+
+/* Start Active Classes */
+
+.descrip.active{
+  display: block;
+}
+/* End of Active Classes */
 .exp-container {
   display: flex;
   justify-content: space-evenly;
@@ -263,9 +270,18 @@ section {
 .company-name {
   color: var(--dark-mode-text);
   padding: 10px;
+  cursor: pointer;
+
 }
+
 .company-name > span {
-  font-size: 1.1em;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+
+.descrip{
+  display: none;
 }
 
 .descrip > ul {
