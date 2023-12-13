@@ -383,6 +383,11 @@ section {
   .company-name > span {
     font-size: 0.85em;
   }
+  .title-start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media (width < 400px) {
   .nav-items > a {

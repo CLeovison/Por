@@ -49,7 +49,6 @@ lightDark();
 //End of Light & Dark Mode Section
 
 //Start of Scroll Active Navigation Bar
-
 function scrollActive() {
   let navLinkS = document.querySelectorAll(".nav-link");
   let sections = document.querySelectorAll("section");
@@ -81,8 +80,7 @@ function tabs() {
 
   companys.forEach((company) => {
     company.addEventListener("click", () => {
-
-      const index  = [...companys].indexOf(company);
+      const index = [...companys].indexOf(company);
       companys.forEach((x) => {
         x.classList.remove("active");
       });
@@ -92,12 +90,14 @@ function tabs() {
       description.forEach((descrip) => {
         descrip.classList.remove("active");
       });
-      description[index].classList.add('active')
-
+      description[index].classList.add("active");
     });
   });
 }
 tabs();
+
+
+
 //Documentation//
 
 //1. Light Dark Mode Section
@@ -113,6 +113,7 @@ tabs();
 //5. Smooth Scrolling - Done
 //6. Intersection Observer
 //7. View Transition Timeline
+//8. Tabs - Done
 
 //Reference
 // https://codepen.io/dbilanoski/pen/LabpzG - Active Navigation
