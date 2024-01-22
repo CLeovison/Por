@@ -252,7 +252,7 @@ section {
 
 /* Start Active Classes */
 
-.descrip.active{
+.descrip.active {
   display: block;
 }
 /* End of Active Classes */
@@ -271,16 +271,16 @@ section {
   color: var(--dark-mode-text);
   padding: 10px;
   cursor: pointer;
-
 }
-
+.prev-exp{
+  border: 1px solid gray;
+}
 .company-name > span {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 600;
 }
 
-
-.descrip{
+.descrip {
   display: none;
 }
 
@@ -289,17 +289,17 @@ section {
   color: var(--dark-mode-text);
 }
 .descrip > ul > li {
-  list-style: url();
+  list-style: none;
 }
 .title-start {
   display: flex;
   flex-direction: column;
   color: var(--dark-mode-text);
 }
-.title-start > span:nth-child(1){
+.title-start > span:nth-child(1) {
   font-weight: 600;
 }
-.title-start > span:nth-child(2){
+.title-start > span:nth-child(2) {
   padding-top: 5px;
 }
 /* End of Experience Section */
@@ -383,7 +383,7 @@ section {
   .company-name > span {
     font-size: 0.85em;
   }
-  .title-start{
+  .title-start {
     display: flex;
     justify-content: center;
     align-items: center;
